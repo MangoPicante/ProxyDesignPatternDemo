@@ -4,7 +4,7 @@ public class GameLibraryUI {
         GameLibrary lib = new GameLibrary();
 
         for (String gameName : gameNames)
-            lib.add(new Game((gameName)));
+            lib.add(new ProxyGame((gameName)));
 
         lib.openGame("Zelda");
     }

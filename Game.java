@@ -1,14 +1,5 @@
-public record Game(String title) {
-    public Game(String title) {
-        this.title = title;
-        start();
-    }
+public interface Game {
+    void display();
 
-    public void display() {
-        System.out.println("Displaying : " + this.title);
-    }
-
-    private void start() {
-        System.out.println("Starting: " + title);
-    }
+    String title();
 }
